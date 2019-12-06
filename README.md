@@ -1,3 +1,4 @@
+### This code is associated with the paper from Racioppi et al., "Combinatorial chromatin dynamics foster accurate cardiopharyngeal fate choices". eLife, 2019. http://dx.doi.org/10.7554/eLife.49921
 # Ciona ATAC-seq data analysis pipeline
 This pipeline is designed for processing of paired-end ATAC-seq libraries.
 The pipeline was developed to be run on an HPC cluster with the slurm job submission engine, but most of the scripts can be run locally. Beginning from raw FASTQ files, the pipeline calls peaks and generates signal tracks. An accessome is created from all samples, which is used to compute read counts to calculate differential accessibility. The pipeline integrates ATAC-seq and RNA-seq data by annotating peaks to nearby genomic elements, and merging differentially expressed genes with differentially accessible peaks. It further characterizes differentially accessible elements by performing Gene Set Enrichment Analysis and motif enrichment.
